@@ -22,7 +22,6 @@ def setup_logging():
 
 def download():
     work_dir = os.path.join(os.path.expanduser("~"), "tmp", "word2pdf")
-    os.makedirs(work_dir, exist_ok=True)
     id_list = os.path.join(work_dir, "id_list.txt")
     dump_dir = os.path.join(work_dir, "worker-downloads")
     log_file = os.path.join(work_dir, "worker-log.csv")
